@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May 26 15:25:11 2025
+# Process ID: 2900
+# Current directory: C:/Users/Admin/lab7/lab7.runs/impl_1
+# Command line: vivado.exe -log SnakeGameTop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SnakeGameTop.tcl -notrace
+# Log file: C:/Users/Admin/lab7/lab7.runs/impl_1/SnakeGameTop.vdi
+# Journal file: C:/Users/Admin/lab7/lab7.runs/impl_1\vivado.jou
+# Running On: Ahmad, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 8434 MB
+#-----------------------------------------------------------
+source SnakeGameTop.tcl -notrace

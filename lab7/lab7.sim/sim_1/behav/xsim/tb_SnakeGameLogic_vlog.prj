@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../FPGA_lab/lab6/lab6.srcs/sources_1/new/VGA_Interface.v" \
+"../../../../lab7.srcs/sources_1/new/snake_game.v" \
+"../../../../../../../FPGA_lab/lab5/lab5.srcs/sources_1/new/Ps2_Interface.v" \
+"../../../../../Downloads/lab3_student_sources/lab3_student_sources/Seg_7_Display.v" \
+"../../../../lab7.srcs/sources_1/new/SnakeMovement.v" \
+"../../../../../Downloads/lab2_student_sources/lab2_student_sources/Counter.v" \
+"../../../../../Downloads/lab2_student_sources/lab2_student_sources/Lim_Inc.v" \
+"../../../../../Downloads/lab1_student_sources/lab1_student_sources/CSA.v" \
+"../../../../../Downloads/lab1_student_sources/lab1_student_sources/FA.v" \
+"../../../../lab7.srcs/sources_1/new/ScoreCounter.v" \
+"../../../../lab7.srcs/sources_1/new/SnakePixelRenderer.v" \
+"../../../../lab7.srcs/sources_1/new/SnakeGameLogic.v" \
+"../../../../lab7.srcs/sim_1/new/tb_SnakeMovement.v" \
+"../../../../lab7.srcs/sim_1/new/tb_SnakeGameLogic.v" \
+"../../../../lab7.srcs/sim_1/new/tb_SnakePixelRenderer.v" \
+"../../../../lab7.srcs/sim_1/new/tb_ScoreCounter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

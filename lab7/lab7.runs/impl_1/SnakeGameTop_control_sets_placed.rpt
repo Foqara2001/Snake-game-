@@ -1,0 +1,268 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon May 26 15:26:18 2025
+| Host         : Ahmad running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SnakeGameTop_control_sets_placed.rpt
+| Design       : SnakeGameTop
+| Device       : xc7a35tl
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   190 |
+|    Minimum number of control sets                        |   190 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   355 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   190 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    13 |
+| >= 6 to < 8        |    48 |
+| >= 8 to < 10       |    19 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     8 |
+| >= 14 to < 16      |    53 |
+| >= 16              |    46 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              53 |           31 |
+| No           | No                    | Yes                    |              72 |           23 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              21 |           10 |
+| Yes          | No                    | Yes                    |              52 |           13 |
+| Yes          | Yes                   | No                     |            2263 |          842 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |                  Enable Signal                 |                Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+------------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|  pixel_clk_BUFG   |                                                |                                                |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[160]_i_1_n_0  | reset_IBUF                                     |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[865]_i_1_n_0  | reset_IBUF                                     |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[909]_i_1_n_0  | reset_IBUF                                     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[512]_i_1_n_0  | reset_IBUF                                     |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[953]_i_1_n_0  | reset_IBUF                                     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1041]_i_1_n_0 | reset_IBUF                                     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[876]_i_1_n_0  | reset_IBUF                                     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[248]_i_1_n_0  | reset_IBUF                                     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[887]_i_1_n_0  | reset_IBUF                                     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[204]_i_1_n_0  | reset_IBUF                                     |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[182]_i_1_n_0  | reset_IBUF                                     |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[336]_i_1_n_0  | reset_IBUF                                     |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[171]_i_1_n_0  | reset_IBUF                                     |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[523]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[600]_i_1_n_0  | reset_IBUF                                     |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[347]_i_1_n_0  | reset_IBUF                                     |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[358]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[424]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/direction                           | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1085]_i_1_n_0 | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1052]_i_1_n_0 | reset_IBUF                                     |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[975]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1063]_i_1_n_0 | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[964]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[931]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[380]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[997]_i_1_n_0  | reset_IBUF                                     |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[71]_i_1_n_0   | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[688]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[270]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[27]_i_1_n_0   | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[259]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[556]_i_1_n_0  | reset_IBUF                                     |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[226]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[534]_i_1_n_0  | reset_IBUF                                     |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[292]_i_1_n_0  | reset_IBUF                                     |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[93]_i_1_n_0   | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[402]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[281]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/snake_length[6]_i_1_n_0             | reset_IBUF                                     |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[710]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[435]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[446]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[314]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[942]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[732]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[115]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[986]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[237]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  pixel_clk_BUFG   | game_logic/game_over                           |                                                |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[699]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[578]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1019]_i_1_n_0 | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[82]_i_1_n_0   | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[611]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[644]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[49]_i_1_n_0   | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[622]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[776]_i_1_n_0  | reset_IBUF                                     |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[468]_i_1_n_0  | reset_IBUF                                     |                3 |              7 |         2.33 |
+|  pixel_clk_BUFG   | vga/y_downsampled0                             | reset_IBUF                                     |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[787]_i_1_n_0  | reset_IBUF                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[666]_i_1_n_0  | reset_IBUF                                     |                3 |              8 |         2.67 |
+|  pixel_clk_BUFG   | vga/x_downsampled0                             | reset_IBUF                                     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[137]_i_1_n_0  | reset_IBUF                                     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[633]_i_1_n_0  | reset_IBUF                                     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[589]_i_1_n_0  | reset_IBUF                                     |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[60]_i_1_n_0   | reset_IBUF                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[413]_i_1_n_0  | reset_IBUF                                     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[457]_i_1_n_0  | reset_IBUF                                     |                3 |              8 |         2.67 |
+| ~PS2Clk_IBUF_BUFG | ps2/passed_num[7]_i_1_n_0                      | reset_IBUF                                     |                3 |              8 |         2.67 |
+| ~PS2Clk_IBUF_BUFG | ps2/first_num[7]_i_1_n_0                       | reset_IBUF                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[820]_i_1_n_0  | reset_IBUF                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[104]_i_1_n_0  | reset_IBUF                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[754]_i_1_n_0  | reset_IBUF                                     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[490]_i_1_n_0  | reset_IBUF                                     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[798]_i_1_n_0  | reset_IBUF                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[765]_i_1_n_0  | reset_IBUF                                     |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[842]_i_1_n_0  | reset_IBUF                                     |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[809]_i_1_n_0  | reset_IBUF                                     |                3 |              9 |         3.00 |
+|  pixel_clk_BUFG   | vga/v_count[9]_i_1_n_0                         | reset_IBUF                                     |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG    | score_unit/seg_disp/clear                      | reset_IBUF                                     |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[857]_i_2_n_0  | game_logic/movement/snake_x_flat[857]_i_1_n_0  |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[769]_i_2_n_0  | game_logic/movement/snake_x_flat[769]_i_1_n_0  |                4 |             13 |         3.25 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[153]_i_2_n_0  | game_logic/movement/snake_x_flat[153]_i_1_n_0  |                5 |             13 |         2.60 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[846]_i_2_n_0  | game_logic/movement/snake_x_flat[846]_i_1_n_0  |                6 |             13 |         2.17 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[835]_i_2_n_0  | game_logic/movement/snake_x_flat[835]_i_1_n_0  |                3 |             13 |         4.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[505]_i_2_n_0  | game_logic/movement/snake_x_flat[505]_i_1_n_0  |                4 |             13 |         3.25 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[813]_i_2_n_0  | game_logic/movement/snake_x_flat[813]_i_1_n_0  |                6 |             13 |         2.17 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[681]_i_2_n_0  | game_logic/movement/snake_x_flat[681]_i_1_n_0  |                4 |             13 |         3.25 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[142]_i_2_n_0  | game_logic/movement/snake_x_flat[142]_i_1_n_0  |                9 |             14 |         1.56 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[131]_i_2_n_0  | game_logic/movement/snake_x_flat[131]_i_1_n_0  |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[329]_i_2_n_0  | game_logic/movement/snake_x_flat[329]_i_1_n_0  |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[417]_i_2_n_0  | game_logic/movement/snake_x_flat[417]_i_1_n_0  |                2 |             14 |         7.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[109]_i_2_n_0  | game_logic/movement/snake_x_flat[109]_i_1_n_0  |                3 |             14 |         4.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[461]_i_2_n_0  | game_logic/movement/snake_x_flat[461]_i_1_n_0  |                8 |             14 |         1.75 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[483]_i_2_n_0  | game_logic/movement/snake_x_flat[483]_i_1_n_0  |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[494]_i_2_n_0  | game_logic/movement/snake_x_flat[494]_i_1_n_0  |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[593]_i_2_n_0  | game_logic/movement/snake_x_flat[593]_i_1_n_0  |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[659]_i_2_n_0  | game_logic/movement/snake_x_flat[659]_i_1_n_0  |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[670]_i_2_n_0  | game_logic/movement/snake_x_flat[670]_i_1_n_0  |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[637]_i_2_n_0  | game_logic/movement/snake_x_flat[637]_i_1_n_0  |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[65]_i_2_n_0   | game_logic/movement/snake_x_flat[65]_i_1_n_0   |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[725]_i_2_n_0  | game_logic/movement/snake_x_flat[725]_i_1_n_0  |                3 |             14 |         4.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[747]_i_2_n_0  | game_logic/movement/snake_x_flat[747]_i_1_n_0  |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[802]_i_2_n_0  | game_logic/movement/snake_x_flat[802]_i_1_n_0  |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[758]_i_2_n_0  | game_logic/movement/snake_x_flat[758]_i_1_n_0  |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[791]_i_2_n_0  | game_logic/movement/snake_x_flat[791]_i_1_n_0  |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/food_x[6]_i_1_n_0                   |                                                |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1033]_i_2_n_0 | game_logic/movement/snake_x_flat[1033]_i_1_n_0 |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[824]_i_2_n_0  | game_logic/movement/snake_x_flat[824]_i_1_n_0  |               10 |             14 |         1.40 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[472]_i_2_n_0  | game_logic/movement/snake_x_flat[472]_i_1_n_0  |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[780]_i_2_n_0  | game_logic/movement/snake_x_flat[780]_i_1_n_0  |               10 |             15 |         1.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[54]_i_2_n_0   | game_logic/movement/snake_x_flat[54]_i_1_n_0   |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[703]_i_2_n_0  | game_logic/movement/snake_x_flat[703]_i_1_n_0  |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[373]_i_2_n_0  | game_logic/movement/snake_x_flat[373]_i_1_n_0  |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[571]_i_2_n_0  | game_logic/movement/snake_x_flat[571]_i_1_n_0  |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[736]_i_2_n_0  | game_logic/movement/snake_x_flat[736]_i_1_n_0  |                8 |             15 |         1.88 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[43]_i_2_n_0   | game_logic/movement/snake_x_flat[43]_i_1_n_0   |                8 |             15 |         1.88 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[714]_i_2_n_0  | game_logic/movement/snake_x_flat[714]_i_1_n_0  |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1022]_i_2_n_0 | game_logic/movement/snake_x_flat[1022]_i_1_n_0 |                8 |             15 |         1.88 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[549]_i_2_n_0  | game_logic/movement/snake_x_flat[549]_i_1_n_0  |               10 |             15 |         1.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[406]_i_2_n_0  | game_logic/movement/snake_x_flat[406]_i_1_n_0  |               11 |             15 |         1.36 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[582]_i_2_n_0  | game_logic/movement/snake_x_flat[582]_i_1_n_0  |                7 |             15 |         2.14 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[120]_i_2_n_0  | game_logic/movement/snake_x_flat[120]_i_1_n_0  |                2 |             15 |         7.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[439]_i_2_n_0  | game_logic/movement/snake_x_flat[439]_i_1_n_0  |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[241]_i_2_n_0  | game_logic/movement/snake_x_flat[241]_i_1_n_0  |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[450]_i_2_n_0  | game_logic/movement/snake_x_flat[450]_i_1_n_0  |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[285]_i_2_n_0  | game_logic/movement/snake_x_flat[285]_i_1_n_0  |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1011]_i_2_n_0 | game_logic/movement/snake_x_flat[1011]_i_1_n_0 |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[21]_i_2_n_0   | game_logic/movement/snake_x_flat[21]_i_1_n_0   |                8 |             15 |         1.88 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[318]_i_2_n_0  | game_logic/movement/snake_x_flat[318]_i_1_n_0  |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[626]_i_2_n_0  | game_logic/movement/snake_x_flat[626]_i_1_n_0  |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[395]_i_2_n_0  | game_logic/movement/snake_x_flat[395]_i_1_n_0  |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1099]_i_2_n_0 | game_logic/movement/snake_x_flat[1099]_i_1_n_0 |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1077]_i_2_n_0 | game_logic/movement/snake_x_flat[1077]_i_1_n_0 |                7 |             15 |         2.14 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[648]_i_2_n_0  | game_logic/movement/snake_x_flat[648]_i_1_n_0  |                8 |             15 |         1.88 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[615]_i_2_n_0  | game_logic/movement/snake_x_flat[615]_i_1_n_0  |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[87]_i_2_n_0   | game_logic/movement/snake_x_flat[87]_i_1_n_0   |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[945]_i_2_n_0  | game_logic/movement/snake_x_flat[945]_i_1_n_0  |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[98]_i_2_n_0   | game_logic/movement/snake_x_flat[98]_i_1_n_0   |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[989]_i_2_n_0  | game_logic/movement/snake_x_flat[989]_i_1_n_0  |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[307]_i_2_n_0  | game_logic/movement/snake_x_flat[307]_i_1_n_0  |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[527]_i_2_n_0  | game_logic/movement/snake_x_flat[527]_i_1_n_0  |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[538]_i_2_n_0  | game_logic/movement/snake_x_flat[538]_i_1_n_0  |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[263]_i_2_n_0  | game_logic/movement/snake_x_flat[263]_i_1_n_0  |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[197]_i_2_n_0  | game_logic/movement/snake_x_flat[197]_i_1_n_0  |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[362]_i_2_n_0  | game_logic/movement/snake_x_flat[362]_i_1_n_0  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[230]_i_2_n_0  | game_logic/movement/snake_x_flat[230]_i_1_n_0  |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[692]_i_2_n_0  | game_logic/movement/snake_x_flat[692]_i_1_n_0  |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[604]_i_2_n_0  | game_logic/movement/snake_x_flat[604]_i_1_n_0  |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1055]_i_2_n_0 | game_logic/movement/snake_x_flat[1055]_i_1_n_0 |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1066]_i_2_n_0 | game_logic/movement/snake_x_flat[1066]_i_1_n_0 |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[76]_i_2_n_0   | game_logic/movement/snake_x_flat[76]_i_1_n_0   |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[384]_i_2_n_0  | game_logic/movement/snake_x_flat[384]_i_1_n_0  |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1088]_i_2_n_0 | game_logic/movement/snake_x_flat[1088]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1000]_i_2_n_0 | game_logic/movement/snake_x_flat[1000]_i_1_n_0 |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[978]_i_2_n_0  | game_logic/movement/snake_x_flat[978]_i_1_n_0  |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[934]_i_2_n_0  | game_logic/movement/snake_x_flat[934]_i_1_n_0  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[967]_i_2_n_0  | game_logic/movement/snake_x_flat[967]_i_1_n_0  |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[274]_i_2_n_0  | game_logic/movement/snake_x_flat[274]_i_1_n_0  |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[428]_i_2_n_0  | game_logic/movement/snake_x_flat[428]_i_1_n_0  |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[32]_i_2_n_0   | game_logic/movement/snake_x_flat[32]_i_1_n_0   |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[560]_i_2_n_0  | game_logic/movement/snake_x_flat[560]_i_1_n_0  |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[901]_i_2_n_0  | game_logic/movement/snake_x_flat[901]_i_1_n_0  |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[923]_i_2_n_0  | game_logic/movement/snake_x_flat[923]_i_1_n_0  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[296]_i_2_n_0  | game_logic/movement/snake_x_flat[296]_i_1_n_0  |                7 |             16 |         2.29 |
+| ~PS2Clk_IBUF_BUFG |                                                | reset_IBUF                                     |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG    | game_logic/movement/E[0]                       | reset_IBUF                                     |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[219]_i_2_n_0  | game_logic/movement/snake_x_flat[219]_i_1_n_0  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[351]_i_2_n_0  | game_logic/movement/snake_x_flat[351]_i_1_n_0  |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[252]_i_2_n_0  | game_logic/movement/snake_x_flat[252]_i_1_n_0  |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[516]_i_2_n_0  | game_logic/movement/snake_x_flat[516]_i_1_n_0  |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[340]_i_2_n_0  | game_logic/movement/snake_x_flat[340]_i_1_n_0  |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[956]_i_2_n_0  | game_logic/movement/snake_x_flat[956]_i_1_n_0  |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[208]_i_2_n_0  | game_logic/movement/snake_x_flat[208]_i_1_n_0  |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[890]_i_2_n_0  | game_logic/movement/snake_x_flat[890]_i_1_n_0  |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[186]_i_2_n_0  | game_logic/movement/snake_x_flat[186]_i_1_n_0  |                8 |             17 |         2.12 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[1044]_i_2_n_0 | game_logic/movement/snake_x_flat[1044]_i_1_n_0 |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[912]_i_2_n_0  | game_logic/movement/snake_x_flat[912]_i_1_n_0  |                9 |             17 |         1.89 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[175]_i_2_n_0  | game_logic/movement/snake_x_flat[175]_i_1_n_0  |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[879]_i_2_n_0  | game_logic/movement/snake_x_flat[879]_i_1_n_0  |                6 |             17 |         2.83 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[868]_i_2_n_0  | game_logic/movement/snake_x_flat[868]_i_1_n_0  |                8 |             18 |         2.25 |
+|  clk_IBUF_BUFG    | game_logic/movement/snake_x_flat[164]_i_2_n_0  | game_logic/movement/snake_x_flat[164]_i_1_n_0  |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG    |                                                | reset_IBUF                                     |                6 |             20 |         3.33 |
+|  clk_IBUF_BUFG    | game_logic/move_counter                        | game_logic/move_counter[0]_i_1_n_0             |                8 |             32 |         4.00 |
+|  pixel_clk_BUFG   |                                                | reset_IBUF                                     |               14 |             36 |         2.57 |
+|  clk_IBUF_BUFG    |                                                |                                                |               30 |             51 |         1.70 |
+|  clk_IBUF_BUFG    | game_logic/movement/enable_move_pulse          | reset_IBUF                                     |               78 |            220 |         2.82 |
++-------------------+------------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+
+

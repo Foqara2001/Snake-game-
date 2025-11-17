@@ -1,0 +1,21 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/FPGA_lab/lab5/lab5.srcs/sources_1/new/Ps2_Interface.v,1747995097,verilog,,C:/Users/Admin/Downloads/lab3_student_sources/lab3_student_sources/Seg_7_Display.v,,Ps2_interface,,,,,,,,
+C:/FPGA_lab/lab6/lab6.srcs/sources_1/new/VGA_Interface.v,1747853397,verilog,,C:/Users/Admin/lab7/lab7.srcs/sources_1/new/snake_game.v,,VGA_Interface,,,,,,,,
+C:/Users/Admin/Downloads/lab1_student_sources/lab1_student_sources/CSA.v,1745161788,verilog,,C:/Users/Admin/Downloads/lab1_student_sources/lab1_student_sources/FA.v,,CSA,,,,,,,,
+C:/Users/Admin/Downloads/lab1_student_sources/lab1_student_sources/FA.v,1742778238,verilog,,C:/Users/Admin/lab7/lab7.srcs/sources_1/new/ScoreCounter.v,,FA,,,,,,,,
+C:/Users/Admin/Downloads/lab2_student_sources/lab2_student_sources/Counter.v,1745529403,verilog,,C:/Users/Admin/Downloads/lab2_student_sources/lab2_student_sources/Lim_Inc.v,,Counter,,,,,,,,
+C:/Users/Admin/Downloads/lab2_student_sources/lab2_student_sources/Lim_Inc.v,1743244429,verilog,,C:/Users/Admin/Downloads/lab1_student_sources/lab1_student_sources/CSA.v,,Lim_Inc,,,,,,,,
+C:/Users/Admin/Downloads/lab3_student_sources/lab3_student_sources/Seg_7_Display.v,1748116922,verilog,,C:/Users/Admin/lab7/lab7.srcs/sources_1/new/SnakeMovement.v,,Seg_7_Display,,,,,,,,
+C:/Users/Admin/lab7/lab7.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_ScoreCounter.v,1748210133,verilog,,,,tb_ScoreCounter_7step,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_SnakeGameLogic.v,1748204755,verilog,,C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_SnakePixelRenderer.v,,tb_SnakeGameLogic,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_SnakeMovement.v,1748204001,verilog,,C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_SnakeGameLogic.v,,tb_SnakeMovement,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_SnakePixelRenderer.v,1748205653,verilog,,C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_ScoreCounter.v,,tb_SnakePixelRenderer,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sources_1/new/ScoreCounter.v,1748129038,verilog,,C:/Users/Admin/lab7/lab7.srcs/sources_1/new/SnakePixelRenderer.v,,ScoreCounter,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sources_1/new/SnakeGameLogic.v,1748196101,verilog,,C:/Users/Admin/lab7/lab7.srcs/sim_1/new/tb_SnakeMovement.v,,SnakeGameLogic,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sources_1/new/SnakeMovement.v,1748177875,verilog,,C:/Users/Admin/Downloads/lab2_student_sources/lab2_student_sources/Counter.v,,SnakeMovement,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sources_1/new/SnakePixelRenderer.v,1748168914,verilog,,C:/Users/Admin/lab7/lab7.srcs/sources_1/new/SnakeGameLogic.v,,SnakePixelRenderer,,,,,,,,
+C:/Users/Admin/lab7/lab7.srcs/sources_1/new/snake_game.v,1748196724,verilog,,C:/FPGA_lab/lab5/lab5.srcs/sources_1/new/Ps2_Interface.v,,SnakeGameTop,,,,,,,,
